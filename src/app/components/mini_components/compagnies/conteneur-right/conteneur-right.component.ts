@@ -49,8 +49,8 @@ export class ConteneurRightComponent implements OnInit {
     });
   }
 
-  openModal(aeroport: any): void {
-    this.selectedCompagnie = { ...aeroport }; // Copier l'objet compagnie
+  openModal(compagnie: any): void {
+    this.selectedCompagnie = { ...compagnie }; // Copier l'objet compagnie
     this.showModal = true;
   }
 
