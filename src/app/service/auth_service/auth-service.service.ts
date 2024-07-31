@@ -3,9 +3,12 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { BehaviorSubject, catchError, map, Observable, throwError } from 'rxjs';
 
+
 @Injectable({
   providedIn: 'root'
 })
+
+
 export class AuthServiceService {
   private BASE_URL = 'http://localhost:8080';
   private currentUserSubject: BehaviorSubject<any>;
@@ -54,6 +57,7 @@ export class AuthServiceService {
     }
     return throwError(errorMessage);
   }
+
 
   logout() {
     if (this.isBrowser()) {
